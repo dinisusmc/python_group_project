@@ -1,6 +1,15 @@
 # python_group_project
 Python project for breast cancer image classification app
 
+## Quick Start
+
+```
+make install    # install dependencies
+make api        # start the prediction API 
+## Open a new terminal window
+make app        # start the GUI 
+```
+
 # Problem Statement
 
 Breast cancer diagnosis from ultrasound images is a critical but time-consuming task. This project aims to:

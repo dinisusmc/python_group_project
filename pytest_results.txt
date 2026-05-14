@@ -1,0 +1,54 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Library/Developer/CommandLineTools/usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/felipe/Documents/python_group_project
+plugins: anyio-4.12.1
+collecting ... collected 9 items
+
+tests/test_dataset_loader.py::test_validate_dataset_rejects_missing_path PASSED [ 11%]
+tests/test_dataset_loader.py::test_get_class_names_returns_real_subfolders PASSED [ 22%]
+tests/test_dataset_loader.py::test_load_dataset_returns_tensorflow_datasets SKIPPED [ 33%]
+tests/test_trainer.py::test_build_model_returns_compiled_keras_model SKIPPED [ 44%]
+tests/test_trainer.py::test_model_output_matches_number_of_classes SKIPPED [ 55%]
+tests/test_trainer.py::test_model_uses_global_average_pooling_instead_of_flatten SKIPPED [ 66%]
+tests/test_trainer.py::test_model_contains_batch_normalization_layers SKIPPED [ 77%]
+tests/test_trainer.py::test_model_tracks_precision_recall_and_auc_metrics SKIPPED [ 88%]
+tests/test_trainer.py::test_trainer_defines_reduce_lr_and_early_stopping_callbacks SKIPPED [100%]
+
+=============================== warnings summary ===============================
+../../Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35
+  /Users/felipe/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+    warnings.warn(
+
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:64
+  /Users/felipe/Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85
+  /Users/felipe/Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89
+  /Users/felipe/Library/Python/3.9/lib/python/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+../../Library/Python/3.9/lib/python/site-packages/matplotlib/_mathtext.py:45
+  /Users/felipe/Library/Python/3.9/lib/python/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+../../Library/Python/3.9/lib/python/site-packages/tensorflow/python/framework/ops.py:315
+  /Users/felipe/Library/Python/3.9/lib/python/site-packages/tensorflow/python/framework/ops.py:315: DeprecationWarning: Conversion of an array with ndim > 0 to a scalar is deprecated, and will error in future. Ensure you extract a single element from your array before performing this operation. (Deprecated NumPy 1.25.)
+    return float(self._numpy())
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================== 2 passed, 7 skipped, 16 warnings in 5.11s ===================
